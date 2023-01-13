@@ -1,0 +1,108 @@
+.videoModal {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  cursor: pointer;
+  border-radius: 50px;
+  z-index: 10;
+  background: url(../../../../assets/images/openVideo.png) center center
+    no-repeat;
+}
+
+.imageOutBox {
+  width: 350px;
+  height: 102px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+.row-scrollOutBox {
+  display: flex;
+  flex-direction: column;
+  width: 4.85rem !important;
+}
+.row-scrollOutBox .imageOutBox {
+  width: 110px;
+  height: 346px;
+}
+.row-scrollOutBox .imageOutBox .imageInnerBox {
+  margin-top: 0 !important;
+}
+.row-scrollOutBox .rc-icon.rc-up--xs:after {
+  background-position: 54.55% 100% !important;
+  width: 24px;
+}
+.imageInnerBox {
+  width: 1000px;
+  position: absolute;
+  /* left: 0; */
+  top: 0;
+}
+.imageInnerBox .rc-img--square {
+  margin-left: 5px;
+  margin-top: 5px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.imageInnerBox > div,
+.imageInnerBox video {
+  width: 4rem;
+  height: 4rem;
+}
+.moveImg {
+  width: 30px;
+  /* height: 64px; */
+}
+.scrollOutBox {
+  width: 414px;
+  position: relative;
+}
+.rightArrow,
+.leftArrow {
+  position: relative;
+  top: -30px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.bigImageOutBox {
+  position: relative;
+  overflow: hidden;
+}
+.bigImageInnerBox {
+  position: absolute;
+  overflow: hidden;
+  width: 9000px;
+  transition: all 0.2s linear !important;
+}
+.bigImageInnerBox div {
+  width: 250px;
+  height: 354px;
+  float: left;
+}
+@media (max-width: 769px) {
+  .bigImageInnerBox div {
+    width: 230px;
+    height: 324px;
+    float: left;
+  }
+  .imageInnerBox > div {
+    float: left;
+    width: 55px;
+    height: 55px;
+  }
+  .imageOutBox {
+    width: 300px;
+    overflow: hidden;
+  }
+  .scrollOutBox {
+    width: 100%;
+    text-align: center;
+  }
+}
